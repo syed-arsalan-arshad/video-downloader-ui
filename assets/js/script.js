@@ -21,7 +21,7 @@ function getVideoInfo() {
     $("#url-error-msg").css({ display: "none" });
     $.ajax({
       type: "POST",
-      url: "http://localhost:3000/getVideoInfo",
+      url: "https://video-downloader-backend-qeko.vercel.app/getVideoInfo",
       headers: {
         "Content-Type": "application/json",
       },
@@ -121,7 +121,7 @@ function downloadContent() {
   $("#button_container").html(loader);
   $.ajax({
     type: "POST",
-    url: "http://localhost:3000/downloadContent",
+    url: "https://video-downloader-backend-qeko.vercel.app/downloadContent",
     headers: {
       "Content-Type": "application/json",
     },
